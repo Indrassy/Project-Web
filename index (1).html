@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYO — Portfolio & Creative Studio</title>
+    <meta name="description" content="Portofolio KYO Studio: sinematografi, lighting, video editing, dan frontend web development. Based in Jember, ID.">
+    <meta name="theme-color" content="#0d0d12">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Progress scroll -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <header class="nav-wrapper">
+        <nav class="pill-navbar" aria-label="Navigasi utama">
+            <a href="#home" class="pill-logo" aria-label="KYO Studio - beranda">
+                <span class="logo-frame">
+                    <video autoplay loop muted playsinline preload="metadata" poster="images/profile.jpg">
+                        <source src="images/logo-loop.mp4" type="video/mp4">
+                    </video>
+                </span>
+                <span>KYO STUDIO</span>
+            </a>
+
+            <div class="pill-nav-right">
+                <ul class="pill-links">
+                    <li><a href="#home" data-link>Beranda</a></li>
+                    <li><a href="#about" data-link>Tentang</a></li>
+                    <li><a href="#works" data-link>Karya</a></li>
+                    <li><a href="#skills" data-link>Keahlian</a></li>
+                    <li><a href="#contact" data-link>Kontak</a></li>
+                </ul>
+
+                <a href="#contact" class="btn btn-light btn-sm">Hire Me</a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="dropdownMenu">
+                    <span></span><span></span>
+                </button>
+            </div>
+
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#home">Beranda</a>
+                <a href="#about">Tentang</a>
+                <a href="#works">Karya</a>
+                <a href="#skills">Keahlian</a>
+                <a href="#contact">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-stage">
+                <div class="hero-meta hero-meta-left reveal">
+                    <span class="mono-tag">Cinematographer &amp; Dev</span>
+                    <h2>Visual Storyteller &amp; Modern Web Creator</h2>
+                </div>
+
+                <h1 class="giant-text" aria-label="Portfolio">PORTFOLIO</h1>
+
+                <div class="cutout">
+                    <img src="images/profile-cutout.png" alt="Foto profil Kyo" width="380" height="480" fetchpriority="high"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=70'">
+                </div>
+
+                <div class="hero-meta hero-meta-right reveal">
+                    <p>Pengoperasian Kamera, Lighting &amp; Web Interactive</p>
+                    <strong>Based in Jember, ID</strong>
+                </div>
+            </div>
+
+            <div class="hero-cta reveal">
+                <a href="#works" class="btn btn-primary">Lihat Karya</a>
+                <a href="#contact" class="btn btn-ghost">Mulai Proyek</a>
+            </div>
+
+            <!-- Marquee -->
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee-track">
+                    <div class="marquee-group">
+                        <span>CINEMATOGRAPHY</span><i>✦</i>
+                        <span>LIGHTING SETUP</span><i>✦</i>
+                        <span>FRONTEND WEB DEV</span><i>✦</i>
+                        <span>VIDEO EDITING</span><i>✦</i>
+                        <span>FUJIFILM X-T2</span><i>✦</i>
+                        <span>TAILWIND CSS</span><i>✦</i>
+                    </div>
+                    <div class="marquee-group">
+                        <span>CINEMATOGRAPHY</span><i>✦</i>
+                        <span>LIGHTING SETUP</span><i>✦</i>
+                        <span>FRONTEND WEB DEV</span><i>✦</i>
+                        <span>VIDEO EDITING</span><i>✦</i>
+                        <span>FUJIFILM X-T2</span><i>✦</i>
+                        <span>TAILWIND CSS</span><i>✦</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="section-header reveal">
+                <h2 class="section-title">TENTANG <span>SAYA</span></h2>
+                <p class="section-subtitle">Mengenal lebih dekat sosok di balik lensa dan kode.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-photo reveal">
+                    <div class="about-photo-frame">
+                        <img src="images/profile.jpg" alt="Foto Kyo" loading="lazy" width="480" height="600"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=70'">
+                    </div>
+                    <span class="about-tag mono-tag">📍 Jember, Indonesia</span>
+                </div>
+
+                <div class="about-text reveal" style="--i:1">
+                    <span class="mono-tag">Halo, saya Kyo</span>
+                    <h3>Visual storyteller yang juga membangun web.</h3>
+                    <p>Saya seorang cinematographer sekaligus frontend developer yang suka menggabungkan dua dunia: visual sinematik dan pengalaman web yang interaktif. Dari penataan lighting dan pengambilan gambar, sampai color grading dan membangun tampilan website, saya menangani prosesnya dengan detail.</p>
+                    <p>Beberapa proyek yang pernah saya kerjakan antara lain teaser event POSSMA, web ARTHEVALITY, dan toko digital Qiza Store. Saya selalu berusaha membuat hasil yang rapi, enak dilihat, dan nyaman dipakai di perangkat apa pun.</p>
+
+                    <ul class="about-facts">
+                        <li><strong>Fokus</strong><span>Video sinematik &amp; web interaktif</span></li>
+                        <li><strong>Kamera</strong><span>Fujifilm X-T2</span></li>
+                        <li><strong>Stack</strong><span>HTML, Tailwind CSS, JavaScript</span></li>
+                        <li><strong>Lokasi</strong><span>Jember, ID</span></li>
+                    </ul>
+
+                    <div class="about-tools">
+                        <span class="chip-static">Cinematography</span>
+                        <span class="chip-static">Lighting</span>
+                        <span class="chip-static">Color Grading</span>
+                        <span class="chip-static">Video Editing</span>
+                        <span class="chip-static">Frontend Dev</span>
+                        <span class="chip-static">Tailwind CSS</span>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Ajak Kolaborasi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKS -->
+        <section id="works" class="section">
+            <div class="section-header reveal">
+                <h2 class="section-title">SELECTED <span>WORKS</span></h2>
+                <p class="section-subtitle">Kumpulan portofolio sinematografi, liputan event, dan web development.</p>
+            </div>
+
+            <div class="filters reveal" role="tablist" aria-label="Filter karya">
+                <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+                <button class="chip" data-filter="video" role="tab" aria-selected="false">Video</button>
+                <button class="chip" data-filter="web" role="tab" aria-selected="false">Web</button>
+                <button class="chip" data-filter="photo" role="tab" aria-selected="false">Foto</button>
+            </div>
+
+            <div class="bento" id="bento">
+                <article class="card card-wide reveal" data-cat="video" style="--i:0">
+                    <div class="card-media">
+                        <img src="images/project-teaser.jpg" alt="Teaser POSSMA" loading="lazy" width="1200" height="640"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1000&q=70'">
+                        <span class="badge">Video</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Teaser Commercial POSSMA Event</h3>
+                        <p>Cinematography, Lighting Composition &amp; Color Grading</p>
+                    </div>
+                </article>
+
+                <article class="card reveal" data-cat="web" style="--i:1">
+                    <div class="card-media">
+                        <img src="images/project-web.jpg" alt="Web Arthevality" loading="lazy" width="800" height="640"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=70'">
+                        <span class="badge">Web</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>ARTHEVALITY Web Batch</h3>
+                        <p>Frontend Design with HTML &amp; Tailwind CSS</p>
+                    </div>
+                </article>
+
+                <article class="card reveal" data-cat="photo" style="--i:2">
+                    <div class="card-media">
+                        <img src="images/project-photo.jpg" alt="Fujifilm Session" loading="lazy" width="800" height="640"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=70'">
+                        <span class="badge">Foto</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Mood Photography Session</h3>
+                        <p>Shot using Fujifilm X-T2 Setup</p>
+                    </div>
+                </article>
+
+                <article class="card card-wide reveal" data-cat="web" style="--i:3">
+                    <div class="card-media">
+                        <img src="images/project-qiza.jpg" alt="Qiza Store" loading="lazy" width="1200" height="640"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=70'">
+                        <span class="badge">Web</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Qiza Store Digital Storefront</h3>
+                        <p>Responsive Web &amp; WhatsApp Automation Integration</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="section-header reveal">
+                <h2 class="section-title">CORE <span>CAPABILITIES</span></h2>
+                <p class="section-subtitle">Kombinasi keahlian teknis visual dan pemrograman digital.</p>
+            </div>
+
+            <div class="skills">
+                <article class="skill card-lite reveal" style="--i:0">
+                    <div class="skill-icon" aria-hidden="true">🎥</div>
+                    <h3>CINEMATOGRAPHY &amp; LIGHTING</h3>
+                    <p>Pengoperasian kamera Fujifilm X-T2, penataan lighting studio/lokasi, dan pengambilan gambar dengan komposisi sinematik.</p>
+                </article>
+                <article class="skill card-lite reveal" style="--i:1">
+                    <div class="skill-icon" aria-hidden="true">💻</div>
+                    <h3>FRONTEND DEVELOPMENT</h3>
+                    <p>Pengembangan website responsif dengan struktur HTML5 yang bersih, utilitas Tailwind CSS, dan scripting JavaScript interaktif.</p>
+                </article>
+                <article class="skill card-lite reveal" style="--i:2">
+                    <div class="skill-icon" aria-hidden="true">🎞️</div>
+                    <h3>POST-PRODUCTION EDITING</h3>
+                    <p>Video cutting yang berirama presisi, color grading moody/cinematic, dan retouching aset grafis untuk kebutuhan publikasi.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="contact-box reveal">
+                <h2>LET'S CREATE <span>SOMETHING GREAT</span></h2>
+                <p>Punya proyek video sinematik atau butuh pembuatan web interaktif? Mari berdiskusi.</p>
+                <!-- Ganti 62xxxxxxxxxx dengan nomor WhatsApp kamu (format internasional tanpa +) -->
+                <a href="https://wa.me/62xxxxxxxxxx?text=Halo%20KYO%2C%20saya%20tertarik%20dengan%20layanan%20kamu" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                    HUBUNGI VIA WHATSAPP
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 KYO Studio. All rights reserved.</p>
+        <a href="#home" class="to-top" aria-label="Kembali ke atas">↑ Atas</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
